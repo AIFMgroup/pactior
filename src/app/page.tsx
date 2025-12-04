@@ -131,7 +131,7 @@ export default function Home() {
                 och transparent värdering av ditt företag.
               </p>
               <button className={`btn btn-secondary ${styles.companyBtn}`} disabled>
-                Kommer 2025
+                Kommer 2026
               </button>
             </div>
 
@@ -155,7 +155,7 @@ export default function Home() {
                 under sitt eget varumärke.
               </p>
               <button className={`btn btn-secondary ${styles.companyBtn}`} disabled>
-                Kommer 2025
+                Kommer 2026
               </button>
             </div>
           </div>

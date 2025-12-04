@@ -36,7 +36,7 @@ const newsItems = [
     id: 4,
     date: '2024-10-20',
     category: 'Valiora Analytics',
-    title: 'Valiora Analytics planeras lanseras 2025',
+    title: 'Valiora Analytics planeras lanseras 2026',
     excerpt: 'Vi förbereder lanseringen av vår nya värderingstjänst som kombinerar AI-driven analys med mänsklig expertis.',
     featured: false,
   },

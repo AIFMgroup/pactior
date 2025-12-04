@@ -144,7 +144,7 @@ export default function Tjanster() {
                 värde. Våra analyser är transparenta och lätta att förstå.
               </p>
               <button className="btn btn-secondary" disabled>
-                Lanseras 2025
+                Lanseras 2026
               </button>
             </div>
             <div className={styles.serviceVisual}>
@@ -212,7 +212,7 @@ export default function Tjanster() {
                 kreditgivare, bokföringsbyråer och konsultfirmor.
               </p>
               <button className="btn btn-secondary" disabled>
-                Lanseras 2025
+                Lanseras 2026
               </button>
             </div>
             <div className={styles.serviceVisual}>
