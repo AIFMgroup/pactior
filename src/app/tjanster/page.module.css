@@ -1,0 +1,211 @@
+/* Hero Section */
+.hero {
+  padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+  background-color: var(--color-white);
+}
+
+.hero h1 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-dark-blue);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+}
+
+/* Introduction */
+.intro {
+  background-color: var(--color-light-gray);
+  padding: var(--spacing-xl) 0;
+}
+
+.introText {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* Service Sections */
+.service {
+  background-color: var(--color-white);
+}
+
+.serviceAlt {
+  background-color: var(--color-light-gray);
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: start;
+}
+
+.serviceGridReverse {
+  direction: rtl;
+}
+
+.serviceGridReverse > * {
+  direction: ltr;
+}
+
+.serviceContent {
+  max-width: 540px;
+}
+
+.serviceHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.serviceLogo {
+  height: 50px;
+  width: auto;
+}
+
+.serviceStatus {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+}
+
+.statusSoon {
+  background-color: var(--color-dark-red);
+}
+
+.serviceContent h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-dark-blue);
+}
+
+.serviceType {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-dark-red);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+}
+
+.serviceContent h4 {
+  font-size: 1.1rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-dark-blue);
+}
+
+.serviceContent p {
+  margin-bottom: var(--spacing-md);
+}
+
+.serviceList {
+  margin-bottom: var(--spacing-md);
+}
+
+.serviceContent .btn {
+  margin-top: var(--spacing-md);
+}
+
+.serviceContent .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Service Visual Box */
+.serviceVisual {
+  position: sticky;
+  top: 100px;
+}
+
+.serviceBox {
+  padding: var(--spacing-xl);
+}
+
+.serviceBox h4 {
+  color: var(--color-dark-blue);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.1rem;
+}
+
+.comingSoonBox {
+  opacity: 0.85;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.benefit {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.benefit:last-child {
+  border-bottom: none;
+}
+
+.benefitTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+  margin-bottom: 0.25rem;
+}
+
+.benefitDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* CTA Section */
+.cta {
+  background-color: var(--color-dark-blue);
+}
+
+.cta h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.ctaText {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .serviceGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .serviceGridReverse {
+    direction: ltr;
+  }
+
+  .serviceContent {
+    max-width: 100%;
+  }
+
+  .serviceVisual {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

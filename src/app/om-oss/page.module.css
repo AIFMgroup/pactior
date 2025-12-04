@@ -1,0 +1,163 @@
+/* Hero Section */
+.hero {
+  padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+  background-color: var(--color-white);
+}
+
+.hero h1 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-dark-blue);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+}
+
+/* Story Section */
+.story {
+  background-color: var(--color-light-gray);
+}
+
+.storyBox {
+  padding: var(--spacing-2xl);
+}
+
+.storyBox h2 {
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-dark-blue);
+}
+
+.storyBox p {
+  margin-bottom: var(--spacing-md);
+}
+
+.storyBox p:last-child {
+  margin-bottom: 0;
+}
+
+/* Vision & Mission */
+.visionMission {
+  background-color: var(--color-white);
+}
+
+.vmGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.vmCard {
+  padding: var(--spacing-xl);
+}
+
+.vmCard h3 {
+  color: var(--color-dark-blue);
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+}
+
+.vmCard h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-dark-red);
+}
+
+/* Philosophy Section */
+.philosophy {
+  background-color: var(--color-dark-blue);
+}
+
+.philosophyContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.philosophyContent h2 {
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  display: inline-block;
+}
+
+.philosophyContent h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-dark-red);
+}
+
+.philosophyContent p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.1rem;
+}
+
+.philosophyContent p:last-child {
+  margin-bottom: 0;
+}
+
+/* Values Section */
+.values {
+  background-color: var(--color-light-gray);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.valueCard {
+  padding: var(--spacing-lg);
+}
+
+.valueCard h4 {
+  color: var(--color-dark-blue);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.valueCard p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Team Section */
+.team {
+  background-color: var(--color-white);
+}
+
+.teamText {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .vmGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .storyBox {
+    padding: var(--spacing-lg);
+  }
+}
+
